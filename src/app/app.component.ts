@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Mes tâches';
+ 
+  title: string = "Mon convertisseur";
+  tabs : any = [{label: "Devises", link: "/devises"}, {label: "Temperatures", link: "/temperature"}];
 }

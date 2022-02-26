@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-form-field>
+    <mat-label>CELCIUS</mat-label>
+    <input matInput name="celcius" [(ngModel)]="celcius" (ngModelChange)="celciusEnFahren()">
+    <button *ngIf="celcius || fahren" matSuffix mat-icon-button aria-label="Clear" (click)="celcius = 0 || fahren = 0">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+    <p><span class="iconify" data-icon="fluent:arrow-sort-24-filled"></span></p>
+    <br>
+  <mat-form-field>
+    <mat-label>FAHRENHEIT</mat-label>
+    <input matInput name="fahren" [(ngModel)]="fahren" (ngModelChange)="fahrenEnCelcius()">
+    <button *ngIf="fahren || celcius" matSuffix mat-icon-button aria-label="Clear" (click)="fahren = 0 || celcius = 0">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</mat-card>

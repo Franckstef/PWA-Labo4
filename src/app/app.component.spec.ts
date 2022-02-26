@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Mes tâches'`, () => {
+  it(`should have as title 'Convertisseur'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Mes tâches');
+    expect(app.title).toEqual('Convertisseur');
   });
 
   it('should render toolbar', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('mat-toolbar span')?.textContent).toContain('Mes tâches');
+    expect(compiled.querySelector('mat-toolbar span')?.textContent).toContain('Convertisseur');
   });
 });

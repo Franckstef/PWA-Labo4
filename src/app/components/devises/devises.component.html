@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-form-field>
+    <mat-label>EUROS </mat-label>
+    <input matInput name="euro" type="text" [(ngModel)]="euro" (input)="euroEnDollar()"> 
+    <button *ngIf="dollar || euro" matSuffix mat-icon-button aria-label="Clear" (click)="dollar = 0 || euro = 0">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+    <p><span class="iconify" data-icon="fluent:arrow-sort-24-filled"></span></p>
+    <br>
+  <mat-form-field> 
+    <mat-label>CAD</mat-label>
+    <input matInput name="dollar" [(ngModel)]="dollar" (input)="dollarEnEuro()">
+    <button *ngIf="dollar || euro" matSuffix mat-icon-button aria-label="Clear" (click)="dollar = 0 || euro = 0">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</mat-card>
+ 

@@ -1,0 +1,12 @@
+mat-card {
+    background-color: rgb(208, 217, 224);
+    width: 25%;
+    height: 40%;
+    text-align-last: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    border-style: solid;
+    font-size: 1.5em;
+    border-radius: 10%;
+}
